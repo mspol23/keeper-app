@@ -1,11 +1,12 @@
 import './Note.css';
+import note from '../data/notes';
 
-function Note() {
+function Note({content, title}) {
     return (
         <main className='note'>
             <div >
-                <h1>Title</h1>
-                <p>Message body.</p>
+                <h1> {title} </h1>
+                <p> {content} </p>
             </div>
         </main>
     )
